@@ -9,3 +9,5 @@ A collection of templates, preamble files and other ressources for latex.
 - [ ] biblatex file with example entries
 - [ ] knitr/.Rnw files
 - [ ] example for input vs include
+- [ ] examples of simple to complex math expressions
+- [ ] gitignore file for auxiliaries
