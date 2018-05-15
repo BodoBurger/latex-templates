@@ -17,8 +17,7 @@ A collection of templates, preamble files and other ressources for latex.
     - [Latex Sündenregister (german)](http://mirrors.ctan.org/info/l2tabu/german/l2tabu.pdf)
 - biblatex / bibtex
     - [biblatex ctan](https://ctan.org/pkg/biblatex)
-    - [biblatex-chicago ctan](https://ctan.org/pkg/biblatex-chicago)
-    - [The Chicago Author-Date Specification](ftp://ftp.dante.de/tex-archive/macros/latex/exptl/biblatex-contrib/biblatex-chicago-notes-df/doc/examples/cms-dates-intro.pdf)
+    - [biblatex-chicago ctan](https://ctan.org/pkg/biblatex-chicago) / [The Chicago Author-Date Specification](http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/cms-dates-intro.pdf)
 - Beamer
     - [Beamer user guide](http://mirrors.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
     - [Metropolis theme user guide](http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf)
