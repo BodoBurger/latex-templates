@@ -11,3 +11,7 @@ A collection of templates, preamble files and other ressources for latex.
 - [ ] example for input vs include
 - [ ] examples of simple to complex math expressions
 - [ ] gitignore file for auxiliaries
+
+# Resources
+
+- [Latex Sündenregister (german)](http://mirrors.ctan.org/info/l2tabu/german/l2tabu.pdf)
