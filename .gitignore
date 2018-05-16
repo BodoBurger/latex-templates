@@ -1,0 +1,23 @@
+# TODO: add explanation to each file
+
+###########################################################
+# latex related files
+*.aux
+*.fdb_latexmk
+*.synctex.gz
+*.fls
+*.log
+*.toc 
+# table of content
+*.out 
+# hyperref PDF bookmark
+*.run.xml
+# temp bibliography files:
+*.blg
+*.bcf
+*.bbl
+*-blx.bib
+###########################################################
+
+*.sublime-workspace 
+# created by Sublime Text editor
