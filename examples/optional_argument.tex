@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\usepackage{color}
+
+\renewcommand{\xi}[1][i]{x^{(#1)}}
+
+\newcommand{\beispiel}[2][blue]{\textcolor{#1}{#2}}
+
+\begin{document}
+
+\section{Optional argument within math expression}
+
+$\xi = \xi[1]$.
+
+\section{More examples for optional arguments}
+
+\beispiel{Blau wie die Nacht.}
+
+\beispiel[red]{Rot wie die untergehende Sonne.}
+
+\beispiel[black]{Schwarze Milch.}
+
+\end{document}

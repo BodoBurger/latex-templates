@@ -1,0 +1,54 @@
+\usepackage{dsfont} % double stroke letters
+%\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{kpfonts}
+
+% start section within part at 1
+% TODO: conflict with hyperref-package
+\usepackage{chngcntr}
+\counterwithin*{section}{part}
+
+% turn of identation of paragraphs:
+\usepackage{parskip}
+
+\usepackage{graphicx}
+
+\usepackage{bm}
+
+\usepackage[autostyle=true]{csquotes}
+%\usepackage{copyrightbox} % for adding copyright information to graphs etc.
+\usepackage{algorithm,algorithmic}
+
+%\usepackage{hyperref} % for \url{}-comand; include as last package
+
+%\definecolor{LMUgreen}{RGB}{0, 121, 63}
+%\definecolor{darkgreen}{RGB}{0, 20, 10}
+
+% new math commands
+\newcommand{\of}[1]{\left(#1\right)}
+\newcommand{\off}[1]{\left[#1\right]}
+\newcommand{\offf}[1]{\left\{#1\right\}}
+\newcommand{\oo}[1]{\frac{1}{#1}} % fraction 1/x
+\newcommand{\sumin}[1]{\sum_{i=#1}^{n}} % sum from i=#1 to n
+\newcommand{\X}{\bm{X}} % bold X for vector RV
+\newcommand{\xB}{\bm{x}} % bold x
+\newcommand{\y}{\bm{y}} % bold y
+\newcommand{\z}{\bm{z}} % bold z
+\newcommand{\aB}{\bm{a}} % bold a
+\newcommand{\bB}{\bm{b}} % bold b
+\newcommand{\h}{\bm{h}} % bold h
+\newcommand{\thetaB}{\bm{\theta}} % bold theta
+\newcommand{\E}{\mathbb{E}} % expectation
+\newcommand{\N}{\mathcal{N}} % Gaussian distribution N
+\newcommand{\R}{\mathbb{R}} % R eucledian space
+\newcommand{\iid}[1]{\overset{i.i.d.}{#1}} % i.i.d. over some sign
+\newcommand{\mat}[1]{ %short pmatrix command
+  \begin{pmatrix}
+    #1
+  \end{pmatrix}
+}
+
+\newcommand{\inlinecode}{\texttt}

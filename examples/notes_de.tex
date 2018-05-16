@@ -1,0 +1,101 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{kpfonts}
+
+%Fußnoten speichern:
+\usepackage{savefnmark}
+
+
+\newcommand{\inlinecode}{\texttt}
+
+\author{Josef Jedermann}
+\title{Notizen zu Latex}
+
+\newtheorem{beweis}{Beweis}[section]
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Kurze Notizen zu Latex-Buch...
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\section{Aufbau, Installation}
+
+\begin{itemize}
+\item
+Latex-Distribution: Miktex oder Tex Live? Tex Live für glossaries besser geeignet?
+\item
+Grafiken mit Post-Script (S. 22)
+\end{itemize}
+
+\section{Grundlagen}
+
+\begin{itemize}
+\item
+Dokumentenklassen: Standardklassen limitiert, erweiterte Klassen wie KOMA-Script benutzen (S. 38)
+\end{itemize}
+
+\section{Textformatierung und Strukturierung}
+
+\subsection{Logische Textauszeichnung}
+\begin{itemize}
+\item
+Im Normalfall \textbackslash emph benutzen.
+\item
+Für weitere Unterscheidungen \textbackslash newcommand benutzen (S. 47).
+\end{itemize}
+
+\subsection{Listen}
+S. 54 - 60
+
+\subsection{Umgebungen}
+
+\subsubsection{Zitatumgebungen}
+\verb|\begin{quote / quotation / verse} und \end{}-Tag| (S.62).
+\begin{quote}
+Die Katze lag auf der Matratze.
+\end{quote}
+
+\subsubsection{Theoreme}
+Für durchnummerierte Definitionen, Bespiele, Beweise etc. kann man mit \verb|\newtheorem{beispiel}{Beispiel}[section]| eine Umgebung erstellen.
+\begin{beweis}
+Da es ein Dackel ist, ist es ein Hund.
+\end{beweis}
+
+\subsubsection{Direkte Ausgabe für Quelltext}
+\verb+\verb|Hier können Commandos stehen|+.
+Statt der Balken $\|$ kann auch fast jedes andere Zeichen benutzt werden.
+
+\bigskip
+
+Für mehrzeiliges kann man auch \begin{verbatim}
+\begin{verbatim} Hier steht
+nicht formatierter Text \end{}
+\end{verbatim} benutzen.
+
+
+\subsubsection{Eigene Umgebungen}
+
+Mit \verb|\newenvironment{•}{•}{•}| kann eine eigene Umgebung festgelegt werden (S. 67).
+
+
+\subsection{Fußnoten}
+
+Fußnoten werden mit \verb+\footnote{Ich bin eine Fußnote}+ erzeugt und sehen so\footnote{Ich bin eine Fußnote}\saveFN{\Name1} aus. Es gibt auch die Möglichkeit, dieselbe Fußnote mehrmals zu verwenden (\verb+\saveFN{\NameFootnote}+), so\useFN{\Name1} nämlich.
+
+
+
+\subsection{Querverweise}
+
+\end{document}

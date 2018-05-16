@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{mathtools}
+%\DeclareMathOperator*{\argmin}{arg\,min}
+
+\usepackage{graphicx}
+
+\usepackage{parskip}
+
+\begin{document}
+
+\section*{Exercise 123}
+
+\subsection*{a) LS estimator}
+
+\[ \hat{\beta} = \underset{x}{argmin} ||Y - \mathbf{X}\beta|| =
+  (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T Y \]
+
+Some matrix multiplication:
+
+\[ (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T =
+\begin{pmatrix}
+  1.88 & -1.82 &  1.26 & -1.41 & -2.85 &  3.95 \\
+ -1.04 &  1.21 & -0.67 &  0.96 &  1.83 & -2.29
+\end{pmatrix}
+\]
+
+Result:
+
+\[ \hat{\beta} = (-35.95, 59.44)^T \]
+
+
+\subsection*{b) estimated residuals}
+
+\[
+  \hat{U} = Y - \mathbf{X}\hat{\beta} =
+  \begin{pmatrix} 57\\68\\59\\66\\72\\52 \end{pmatrix}
+  -
+  \begin{pmatrix} 57\\68\\59.16\\66.8\\71.05\\51 \end{pmatrix}
+  =
+  \begin{pmatrix} 0\\0\\-0.16\\-0.8\\0.95\\1 \end{pmatrix}
+\]
+
+\subsection*{c) alternative model}
+
+New design matrix:
+
+\[
+  \mathbf{X}
+  =
+  \begin{pmatrix}
+    1.5700 & 1.7500 & 1.60 & 1.7300 & 1.80 & 1.4700 \\
+    2.4649 & 3.0625 & 2.56 & 2.9929 & 3.24 & 2.1609
+  \end{pmatrix}
+\]
+
+\end{document}

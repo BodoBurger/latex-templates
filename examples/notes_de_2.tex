@@ -1,0 +1,165 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\input{preamble}
+
+%Fußnoten speichern:
+%\usepackage{savefnmark}
+
+\author{Walter Frosch}
+\title{Notizen zu Papula}
+
+\newtheorem{beweis}{Beweis}[section]
+
+\begin{document}
+
+%\maketitle
+
+% \begin{abstract}
+% Kurze Notizen zu Papula (2014) Mathematik für Ingenieure und Naturwissenschaften Band 1.
+% \end{abstract}
+
+%\tableofcontents
+
+\newpage
+
+\part{Allgemeine Grundlagen}
+
+\section{Mengenlehre}
+
+\section{Menge der reellen Zahlen}
+
+\section{Gleichungen}
+\begin{itemize}
+  \item biquadratische Gleichung
+  \item Betragsgleichungen: Fallunterscheidungen zur Lösung
+\end{itemize}
+
+\section{Ungleichungen}
+
+\section{Lineare Gleichungssysteme}
+
+\begin{itemize}
+  \item Gauß-Algorithmus
+\end{itemize}
+
+\section{Binomische Lehrsatz}
+
+\begin{align*}
+  (a + b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k
+\end{align*}
+
+\begin{itemize}
+  \item Pascalsches Dreieck
+\end{itemize}
+
+%%%%%%%%%%%%%%%
+\part{Vektoralgebra}
+
+\section{Grundbegriffe}
+
+
+\section{Vektorrechnung in der Ebene}
+Skalarprodukt: \( \bm{a} \cdot \bm{b} = ab \cdot \cos \phi \)
+
+
+\section{Vektorrechnung im 3-dimensionalen Raum}
+Neue Begriffe: \emph{Vektorprodukt} (zwei Vektoren) und \emph{Spatprodukt} (drei Vektoren).
+
+Orthogonale Vektoren: \( \aB \cdot \bB = 0 \)
+
+Winkel zwischen zwei Vektoren: \( \cos \phi = \frac{\aB \bB}{|\aB| |\bB|} \)
+
+\textbf{Projektion eines Vektors}: \( \bB_a = \left(\frac{\aB \bB}{|\aB|^2}\right) \aB \)
+
+Der Betrag des Vektorprodukts entspricht dem Flächeninhalt des von den Vektoren aufgespannten Parallelogramms.
+
+\textbf{Spatprodukt}: Skalarprodukt mit einem Vektorprodukt; Betrag entspricht dem Volumen des
+aufgespannten Spats; wenn 0, dann sind die drei Vektoren \emph{koplanar}.
+
+\section{Anwendungen in der Geometrie}
+\begin{itemize}
+  \item Abstand Punkt von einer Geraden
+  \item Abstand zweier windschiefer Geraden
+  \item Schnittpunkt/-winkel zweier Geraden
+\end{itemize}
+
+\part{Funktionen und Kurven}
+
+\section{Definition und Darstellung einer Funktion}
+\begin{itemize}
+  \item[x:] Argument
+  \item[y:] Funktionswert
+  \item[D:] Definitionsbereich
+  \item[W:] Wertebereich oder Wertevorrat
+\end{itemize}
+
+\section{Allgemeine Funktionseigenschaften}
+\begin{itemize}
+  \item Nullstellen
+  \item Symmetrie
+  \item Monotonie
+  \item Periodizität
+  \item Inverse
+\end{itemize}
+
+\section{Koordinatentransformation}
+
+
+\section{Grundlagen}
+
+\begin{itemize}
+\item
+Dokumentenklassen: Standardklassen limitiert, erweiterte Klassen wie KOMA-Script
+benutzen (S. 38)
+\end{itemize}
+
+\section{Textformatierung und Strukturierung}
+
+\subsection{Logische Textauszeichnung}
+\begin{itemize}
+\item
+Im Normalfall \textbackslash emph benutzen.
+\item
+Für weitere Unterscheidungen \textbackslash newcommand benutzen (S. 47).
+\end{itemize}
+
+\subsection{Listen}
+S. 54 - 60
+
+\subsection{Umgebungen}
+
+\subsubsection{Zitatumgebungen}
+\verb|\begin{quote / quotation / verse} und \end{}-Tag| (S.62).
+\begin{quote}
+Die Katze lag auf der Matratze.
+\end{quote}
+
+\subsubsection{Theoreme}
+Für durchnummerierte Definitionen, Bespiele, Beweise etc. kann man mit
+\verb|\newtheorem{beispiel}{Beispiel}[section]| eine Umgebung erstellen.
+\begin{beweis}
+Da es ein Dackel ist, ist es ein Hund.
+\end{beweis}
+
+\subsubsection{Direkte Ausgabe für Quelltext}
+\verb+\verb|Hier können Commandos stehen|+.
+Statt der Balken $\|$ kann auch fast jedes andere Zeichen benutzt werden.
+
+\bigskip
+
+Für mehrzeiliges kann man auch \begin{verbatim}
+\begin{verbatim} Hier steht
+nicht formatierter Text \end{}
+\end{verbatim} benutzen.
+
+
+\subsubsection{Eigene Umgebungen}
+
+Mit \verb|\newenvironment{•}{•}{•}| kann eine eigene Umgebung festgelegt werden (S. 67).
+
+
+\subsection{Querverweise}
+
+\end{document}
