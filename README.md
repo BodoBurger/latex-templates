@@ -16,6 +16,7 @@ A collection of templates, preamble files and other ressources for latex.
 - general
     - [Latex Sündenregister (german)](http://mirrors.ctan.org/info/l2tabu/german/l2tabu.pdf)
     - [Hinweise zu Typographie und LaTeX (german)](resources/StefanTittel-Hinweise_zu_Typographie_und_LaTeX-033.pdf)
+    - ["Comprehensive" list of LaTex auxiliary files](https://github.com/wspr/latex-auxfiles/blob/master/auxfiles.tex)
 - biblatex / bibtex
     - [biblatex ctan](https://ctan.org/pkg/biblatex)
     - [biblatex-chicago ctan](https://ctan.org/pkg/biblatex-chicago) / [The Chicago Author-Date Specification](http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/cms-dates-intro.pdf)
