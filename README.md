@@ -44,5 +44,6 @@ See https://en.wikibooks.org/wiki/LaTeX/Fonts#Sizing_text.
 - Beamer
     - [Beamer user guide](http://mirrors.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
     - [Metropolis theme user guide](http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf)
-- misc
-    - [exsheets – Create exercise sheets and exams](https://ctan.org/pkg/exsheets)
+- LaTex and Version Control Systems (Git)
+    - [Suggestion on how to format text paragraphs (tex.stackexchange](https://tex.stackexchange.com/a/133376)
+    - [Semantic linefeeds (tex.stackexchange)](https://tex.stackexchange.com/a/64538)
